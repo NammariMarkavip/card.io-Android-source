@@ -108,7 +108,7 @@ class OverlayView extends View {
     private Path mLockedBackgroundPath;
     private Rect mCameraPreviewRect;
     private final Torch mTorch;
-    private final Logo mLogo;
+//    private final Logo mLogo;
     private Rect mTorchRect, mLogoRect;
     private final boolean mShowTorch;
     private int mRotationFlip;
@@ -126,7 +126,7 @@ class OverlayView extends View {
         mScale = getResources().getDisplayMetrics().density / 1.5f;
 
         mTorch = new Torch(TORCH_WIDTH * mScale, TORCH_HEIGHT * mScale);
-        mLogo = new Logo(captureActivity);
+//        mLogo = new Logo(captureActivity);
 
         mGuidePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
@@ -373,7 +373,7 @@ class OverlayView extends View {
             canvas.save();
             canvas.translate(mLogoRect.exactCenterX(), mLogoRect.exactCenterY());
             canvas.rotate(mRotationFlip * mRotation);
-            mLogo.draw(canvas, LOGO_MAX_WIDTH * mScale, LOGO_MAX_HEIGHT * mScale);
+//            mLogo.draw(canvas, LOGO_MAX_WIDTH * mScale, LOGO_MAX_HEIGHT * mScale);
             canvas.restore();
         }
 
@@ -493,7 +493,7 @@ class OverlayView extends View {
     }
 
     public void setUseCardIOLogo(boolean useCardIOLogo) {
-        mLogo.loadLogo(useCardIOLogo);
+//        mLogo.loadLogo(useCardIOLogo);
     }
 
     // for test
