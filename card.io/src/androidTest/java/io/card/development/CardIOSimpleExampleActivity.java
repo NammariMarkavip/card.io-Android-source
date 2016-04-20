@@ -59,7 +59,7 @@ public class CardIOSimpleExampleActivity extends Activity {
     private CheckBox mSuppressManualToggle;
     private CheckBox mSuppressConfirmationToggle;
     private CheckBox mSuppressScanToggle;
-    private int guideColor = Color.GREEN;
+    private int guideColor = Color.parseColor("#EF4F25");
 
     private Spinner mRecordingListSpinner;
 
